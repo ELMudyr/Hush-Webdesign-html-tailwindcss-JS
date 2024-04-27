@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- npx tailwindcss -i ./Public_html/src/input.css -o ./Public_html/src/output.css --watch -->
+  </head>
+  <body class="bg-PWhite font-body w-[100%]">
+    <nav class="bg-PBlackbg flex justify-between">
+      <div class="container m-auto pt-6 px-7">
+        <nav
+          class="relative m-auto px-4 py-4 flex justify-between items-center w-full overflow-hidden"
+        >
+          <img
+            src="./src/62387f27c8b71530f7289393_Frame 105.png"
+            alt="Hushlogo"
+            class="object-none ml-5"
+          />
+
+          <div class="lg:hidden block self-end order-last">
+            <button
+              class="navbar-burger flex items-center text-PWhite opacity-80 p-5"
+            >
+              <svg
+                class="block h-6 w-6 fill-current"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <ul
+            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:ml-auto lg:justify-end lg:w-[100%] lg:space-x-28"
+          >
+            <li>
+              <a class="text-lg text-PGreyish hover:text-Ptext" href="#"
+                >Products</a
+              >
+            </li>
+
+            <li>
+              <a class="text-lg text-PGreyish hover:text-Ptext" href="#"
+                >Patch Release</a
+              >
+            </li>
+
+            <li>
+              <a class="text-lg text-PGreyish hover:text-Ptext" href="#"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:text-lg text-Ptext opacity-70 ml-auto hover:text-Ptext hover:opacity-100 hover:border-Ptext border-PGreyish border-opacity-75 border lg:px-6 lg:py-3 rounded-full"
+                href="#"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-PBlackbg border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8 justify-end">
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul class="flex flex-col">
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-md font-semibold text-PGreyish hover:bg-Ptext hover:text-PBlue rounded"
+                  href="#"
+                  >Products</a
+                >
+              </li>
+
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-md font-semibold text-PGreyish hover:bg-Ptext hover:text-PBlue rounded"
+                  href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-md font-semibold text-PGreyish hover:bg-Ptext hover:text-PBlue rounded"
+                  href="#"
+                  >Patch Release</a
+                >
+              </li>
+            </ul>
+            <button
+              class="block text-lg text-Ptext opacity-70 ml-auto hover:text-Ptext hover:opacity-100 hover:border-Ptext border-PGreyish border-opacity-75 border w-full px-6 py-3 rounded-full mt-[100%]"
+            >
+              Create Account
+            </button>
+          </div>
+        </nav>
+      </div>
+    </nav>
+    <header class="bg-PBlackbg relative">
+      <div class="pt-24 container text-center gap-14 flex flex-col m-auto">
+        <h1 class="text-Ptext text-7xl md:text-8xl font-bold mx-[10%]">
+          Connect with <br />
+          your team
+        </h1>
+        <p
+          class="text-PGreyish text-md leading-8 font-normal mx-[20%] lg:mx-[30%]"
+        >
+          Hush is a messaging app for your team that will help you to connect
+          with everyone in an easy and comfortable way.
+        </p>
+        <div class="relative w-fit justify-center m-auto">
+          <button
+            type="button"
+            class="shadow-customshadow text-white bg-blue-500 hover:bg-slate-950 hover:border border-white cursor-pointer rounded-full w-fit m-auto font-medium text-lg px-6 py-4 text-center gap-4 inline-flex justify-center"
+          >
+            <svg
+              class="fill-PWhite w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+              />
+            </svg>
+            Download for MacOS
+          </button>
+          <img
+            class="absolute -top-5 -left-5"
+            src="./src/6238938e04e89ccc59e51130_Highlight_05.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="m-auto mx-12 flex -mt-20 lg:-mt-40">
+        <div class="translate-y-1/3 m-auto relative">
+          <img class="" src="src/headerphoto.png" alt="headerphoto" />
+          <img
+            class="absolute -translate-y-2/3 translate-x-2/3 top-0 right-0 w-16 lg:w-28 lg:h-28"
+            src="./src/frame2.png"
+            alt="frame"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="w-[100%] m-auto">
+      <div
+        class="container mt-[30%] lg:mt-[20%] w-[100%] flex-wrap flex justify-center m-auto gap-9"
+      >
+        <img src="./src/header logo 1.png" alt="logo" />
+        <img src="./src/headerlogo 2.png" alt="logo" />
+        <img src="./src/headerlogo3.png" alt="logo" />
+        <img src="./src/headerlogo4.png" alt="logo" />
+      </div>
+
+      <div
+        class="container text-center mb-24 mt-32 gap-7 flex flex-col m-auto w-[100%]"
+      >
+        <h1 class="text-PBlackbg text-6xl font-black leading-snug">
+          Some of our features <br />
+          that will help you
+        </h1>
+        <p class="text-Pparagraph text-lg font-medium w-[70%] mx-auto">
+          With cube, you can build your app or website faster than before.
+          Featured with awesome things inside that will help you in your design
+          process.
+        </p>
+      </div>
+      <div class="container pl-10 lg:pl-0 m-auto">
+        <div class="container m-auto w-[100%] lg:gap-48 lg:flex mb-14">
+          <div class="flex flex-col gap-6 mb-24">
+            <img class="w-12 h-12" src="./src/communication.png" alt="" />
+            <h1 class="text-PBlackbg text-2xl font-semibold">
+              Easy Communication
+            </h1>
+            <p class="text-Pparagraph text-lg font-medium">
+              Easy and simple way to communicate with your team and friends,
+              build with awesome features with it
+            </p>
+          </div>
+          <div class="flex flex-col gap-6 mb-24">
+            <img class="w-12 h-12" src="./src/community support.png" alt="" />
+            <h1 class="text-PBlackbg text-2xl font-semibold">
+              Community Support
+            </h1>
+            <p class="text-Pparagraph text-lg font-medium">
+              A creative and quick way to get feedbacks and support in your team
+              or community, just send the work and the rest will follow
+            </p>
+          </div>
+          <div class="flex flex-col gap-6 mb-24">
+            <img class="w-12 h-12" src="./src/discover.png" alt="" />
+            <h1 class="text-PBlackbg text-2xl font-semibold">
+              Discover Channel
+            </h1>
+            <p class="text-Pparagraph text-lg font-medium">
+              Discover new channels you interest in, meet with new people around
+              the world and make more connections
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <main class="bg-PBlackbg">
+      <div
+        class="flex flex-col lg:flex-row m-auto justify-center lg:w-[70%] pt-28 overflow-hidden"
+      >
+        <div class="container m-auto">
+          <img
+            class="lg:ml-auto m-auto w-[90%] object-contain"
+            src="./src/main2 poster.png"
+            alt=""
+          />
+        </div>
+
+        <div class="gap-12 flex flex-col lg:mr-auto lg:ml-0 m-auto ml-12">
+          <h1 class="text-Ptext text-5xl lg:text-6xl w-fit font-black">
+            Easy and <br />
+            effortless way <br />
+            to connect with <br />
+            your team
+          </h1>
+          <p class="text-PGreyish text-lg font-medium lg: w-[70%]">
+            With hush you can easily connect with your team in a different
+            fields, you can create, manage and edit what ever you want inside
+            the channel. Create as many as you want
+          </p>
+          <button
+            class="hover:border-PWhite text-Ptext opacity-80 font-semibold border-PGreyish border w-fit rounded-full px-4 py-3 text-lg lg:px-5 lg:py-4 lg:text-xl"
+          >
+            Learn more about Hush
+          </button>
+        </div>
+      </div>
+      <div
+        class="mt-52 flex flex-col lg:flex-row m-auto lg:w-[70%] justify-center overflow-hidden"
+      >
+        <div class="gap-12 flex flex-col lg:mr-auto lg:ml-0 m-auto ml-12">
+          <h1 class="text-Ptext text-5xl lg:text-6xl font-black">
+            Tons of <br />
+            supportive <br />
+            community you <br />
+            can discover
+          </h1>
+          <p class="text-PGreyish text-lg font-medium lg: w-[70%]">
+            Search any type and field of community you want, by searching on the
+            search page you can discover tons of supportive community that will
+            help you with your work.
+          </p>
+          <button
+            class="hover:border-PWhite text-Ptext opacity-80 font-semibold border-PGreyish border w-fit rounded-full px-4 py-3 text-lg lg:px-5 lg:py-4 lg:text-xl"
+          >
+            Explore the communities
+          </button>
+        </div>
+        <div class="container m-auto">
+          <img
+            class="lg:ml-auto m-auto w-[90%] object-contain"
+            src="./src/main2 poster 2.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container translate-y-1/2 m-auto">
+        <div
+          class="container py-9 bg-PBlue flex flex-col m-auto text-center justify-center rounded-[30px] gap-8"
+        >
+          <h1 class="text-Ptext text-3xl md:text-7xl font-black">
+            Join thousands <br />creative teams on Hush
+          </h1>
+          <p class="text-PGreyish text-base md:text-lg font-medium px-6">
+            With cube, you can build your app or website faster than before.<br />
+            Featured with awesome things that will help you in your design
+            process
+          </p>
+          <button
+            type="button"
+            class="text-PBlackbg bg-white hover:border-PBlackbg hover:border border-white cursor-pointer rounded-full w-fit m-auto font-medium py-3 px-6 text-lg md:px-8 md:py-5 text-center gap-5 inline-flex justify-center"
+          >
+            <svg
+              class="fill-PBlackbg w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+              />
+            </svg>
+            Download for MacOS
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="w-[100%] mt-[30%] lg:mt-[10%]">
+      <hr />
+      <div
+        class="container grid grid-cols-1 py-14 gap-16 lg:text-start m-auto lg:grid-cols-5 lg:grid-rows-1"
+      >
+        <div
+          class="container col-start-1 flex flex-col md:text-left text-center justify-center m-auto gap-3 md:px-0 px-10"
+        >
+          <img class="object-none h-9" src="./src/logoblack.png" alt="logo" />
+          <p class="text-Pparagraph text-base font-bold">
+            A team messaging app for everyone to connect with their team.
+          </p>
+        </div>
+        <div
+          class="container flex flex-col gap-3 text-center lg:text-start md:col-start-2"
+        >
+          <h2 class="text-PBlackbg opacity-70 text-lg font-bold mb-3">
+            Product
+          </h2>
+          <p class="text-Pparagraph text-base font-semibold">Updates</p>
+          <p class="text-Pparagraph text-base font-semibold">Downloads</p>
+          <p class="text-Pparagraph text-base font-semibold">Beta test</p>
+          <p class="text-Pparagraph text-base font-semibold">Pricing product</p>
+        </div>
+        <div
+          class="container flex flex-col gap-3 text-center md:text-start md:col-start-3"
+        >
+          <h2 class="text-PBlackbg opacity-70 text-lg font-bold mb-3">
+            Support
+          </h2>
+          <p class="text-Pparagraph text-base font-semibold">Help center</p>
+          <p class="text-Pparagraph text-base font-semibold">
+            Account information
+          </p>
+          <p class="text-Pparagraph text-base font-semibold">About</p>
+          <p class="text-Pparagraph text-base font-semibold">Contact us</p>
+        </div>
+        <div
+          class="container flex flex-col gap-3 text-center md:text-start md:col-start-4"
+        >
+          <h2 class="text-PBlackbg opacity-70 text-lg font-bold mb-3">
+            Help and Solutions
+          </h2>
+          <p class="text-Pparagraph text-base font-semibold">Talk to support</p>
+          <p class="text-Pparagraph text-base font-semibold">Support docs</p>
+          <p class="text-Pparagraph text-base font-semibold">System status</p>
+          <p class="text-Pparagraph text-base font-semibold">Covid respond</p>
+        </div>
+      </div>
+      <div class="container my-10 m-auto">
+        <p class="text-Pparagraph text-center text-lg font-semibold mb-2">
+          © 2021 Hush Inc. Copyright and All rights reserved.
+        </p>
+        <p class="text-Pparagraph text-center text-lg font-semibold">
+          <a class="hover:text-PBlackbg" href="#">Terms and Conditions</a> ·
+          <a class="hover:text-PBlackbg" href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
